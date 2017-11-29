@@ -1,0 +1,44 @@
+{
+  "name": "aweber-api",
+  "version": "1.0.0",
+  "description": "Minimal higher-level wrapper around AWeber's API for Node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimf/aweber-api"
+  },
+  "scripts": {
+    "coveralls": "coveralls < coverage/lcov.info",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "npm run test:unit",
+    "test:unit": "nyc tape test/unit/*.test.js",
+    "test:integration": "tape test/integration"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "keywords": [
+    "aweber",
+    "api"
+  ],
+  "author": "Jim Fitzpatrick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimf/aweber-api/issues"
+  },
+  "homepage": "https://github.com/jimf/aweber-api",
+  "dependencies": {
+    "oauth-1.0a": "^2.2.2",
+    "simple-get": "^2.7.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "nock": "^9.1.3",
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  }
+}
