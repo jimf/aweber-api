@@ -1,6 +1,7 @@
 # aweber-api
 
-Minimal higher-level wrapper around AWeber's API for Node.js.
+Minimal higher-level wrapper around [AWeber's API](https://labs.aweber.com/)
+for Node.js.
 
 [![npm Version][npm-badge]][npm]
 [![Build Status][build-badge]][build-status]
@@ -82,8 +83,8 @@ Aweber(consumerKey, consumerSecret, {
   token: null,
   tokenSecret: null,
   userAgent: 'aweber-api (https://github.com/jimf/aweber-api)',
-  Promise: Promise,
-})
+  Promise: Promise
+});
 ```
 
 ## Methods
@@ -102,7 +103,7 @@ a Promise.
 Request a new token and token secret. This method requires the verifier code
 obtained from the user authorization process. Returns a Promise.
 
-### HTTP Methods
+### HTTP Verbs
 
 See the [official AWeber API docs](https://labs.aweber.com/docs/reference/1.0)
 for specifics on using individual endpoints.
