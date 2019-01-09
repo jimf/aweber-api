@@ -105,7 +105,7 @@ obtained from the user authorization process. Returns a Promise.
 
 ### HTTP Verbs
 
-See the [official AWeber API docs](https://labs.aweber.com/docs/reference/1.0)
+See the [official AWeber API docs](https://api.aweber.com/)
 for specifics on using individual endpoints.
 
 #### `Aweber#del(url, options)`
